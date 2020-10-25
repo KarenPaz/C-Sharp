@@ -11,4 +11,9 @@ public class Alumno
     public Alumno (int id){
         Id = id;
     }
+
+    public Alumno (string primernombre, string segundonombre){
+      PrimerNombre = primernombre;
+      SegundoNombre = segundonombre;
+    }
 }
