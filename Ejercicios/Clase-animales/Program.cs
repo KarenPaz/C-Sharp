@@ -53,6 +53,45 @@ namespace _12_ejercicio_clase_animales
             t.Alimentacion();
             Console.WriteLine();
 
+            PezGlobo pg = new PezGlobo();
+            Console.WriteLine("Pez Globo: Tetrodontidos");
+            pg.Nombre = "Gluglu";
+            pg.Aletas = "Pectoral y dorsal";
+            Console.WriteLine("Nombre: "+ pg.Nombre);
+            Console.WriteLine("Aletas: " + pg.Aletas);
+            Console.WriteLine("Espinas: "+ pg.Espinasexternas);
+            pg.Comer();
+            pg.Nadar();
+            pg.Inflarse();
+            pg.EscamasyHabitat();
+            Console.WriteLine();
+
+            Console.WriteLine("***Aves***");
+            Aguila a = new Aguila();
+            Console.WriteLine("Aguila: Calva");
+            a.Nombre = "Kus";
+            a.Colorplumaje = "marron y blanco";
+            Console.WriteLine("Nombre: "+ a.Nombre);
+            Console.WriteLine("Color plumas: " + a.Colorplumaje);
+            Console.WriteLine("Peligro de extinsion: "+ a.Peligrodeextinsion);
+            a.Comer();
+            a.Volar();
+            a.VolarAlto();
+            a.Tamano();
+            Console.WriteLine();
+
+            Loro l = new Loro();
+            Console.WriteLine("Loro");
+            l.Nombre = "Bender";
+            l.Colorplumaje = "Verde fuerte";
+            Console.WriteLine("Nombre: "+ l.Nombre);
+            Console.WriteLine("Color plumas: " + l.Colorplumaje);
+            Console.WriteLine("Domestico: "+ l.EsDomestico);
+            l.Comer();
+            l.Volar();
+            l.Hablar();
+            l.Alimentacion();
+            Console.WriteLine();
         }
     }
 }

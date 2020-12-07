@@ -1,23 +1,23 @@
 using System;
 public class PezGlobo: Peces
 {
-    public bool Espinas { get; set; }
+    public bool Espinasexternas { get; set; }
 
     public PezGlobo() // <- Polimorfismo
     {
-        Espinas = true;
+        Espinasexternas = true;
     }
 
-    public PezGlobo(bool espinas) // <- Polimorfismo
+    public PezGlobo(bool espinasexternas) // <- Polimorfismo
     {
-        Espinas = espinas;
+        Espinasexternas = espinasexternas;
     }
     public void Inflarse () // <- Abstraccion
     {
         Console.WriteLine("Inflarse: se hincha cuando se siente atacado");
     }
 
-    public void Escamas()
+    public void EscamasyHabitat()
     {
         DescribirEscamas();
         DescribirHabitat();

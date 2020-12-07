@@ -1,10 +1,28 @@
 using System;
 public class Loro: Aves
 {
-    public string Garras { get; set; }
-
-    public void VolarAlto()
+    public bool EsDomestico { get; set; }
+    
+    public Loro() // <- Polimorfismo
     {
-        Console.WriteLine("20 metros sobre el nivel del mar");
+        EsDomestico = true;
+    }
+    public Loro(bool esDomestico) // <- Polimorfismo
+    {
+        EsDomestico = esDomestico;
+    }
+    public void Hablar() // <- Abstraccion
+    {
+        Console.WriteLine("Hablar: aprenden con facilidad a Hablar");
+    }
+
+    public void Alimentacion()
+    {
+        DescribirAlimentacion();
+    }
+
+    private void DescribirAlimentacion() // <- Encapsulamiento
+    {
+        Console.WriteLine("Alimentación:  semillas, raíces, tubérculos y frutas");
     }
 }
