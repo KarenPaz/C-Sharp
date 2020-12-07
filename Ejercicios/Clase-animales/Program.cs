@@ -36,6 +36,23 @@ namespace _12_ejercicio_clase_animales
             g.Caminar();
             g.Maullar();
             g.Tamano();
+            Console.WriteLine();
+   
+            Console.WriteLine("***Peces***");
+            Tiburon t = new Tiburon();
+            Console.WriteLine("Tiburón: ballena");
+            t.Nombre = "Rhincodon";
+            t.Aletas = "Pectoral y dorsal";
+            Console.WriteLine("Nombre: "+ t.Nombre);
+            Console.WriteLine("Aletas: " + t.Aletas);
+            t.Depredador = false;
+            Console.WriteLine("Depredador: "+ t.Depredador);
+            t.Comer();
+            t.Nadar();
+            t.Color();
+            t.Alimentacion();
+            Console.WriteLine();
+
         }
     }
 }

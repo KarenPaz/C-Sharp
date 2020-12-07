@@ -6,6 +6,6 @@ public abstract class Peces: Animal
 
     public void Nadar()
     {
-        Console.WriteLine("Nadando");
+        Console.WriteLine("Método: Nadando");
     }
 }
