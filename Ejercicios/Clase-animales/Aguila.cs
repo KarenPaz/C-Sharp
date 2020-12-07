@@ -12,7 +12,7 @@ public class Aguila: Aves
     {
         Peligrodeextinsion = peligrodeextinsion;
     }
-    public void VolarAlto()
+    public void VolarAlto()  // <- Abstraccion
     {
         Console.WriteLine("Altura: Vuelo incluso superior a los 7.000 metros sobre el nivel del mar");
 
