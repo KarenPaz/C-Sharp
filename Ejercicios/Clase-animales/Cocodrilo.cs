@@ -1,10 +1,23 @@
 using System;
-public class Cocodrilo: Reptiles
+public class Cocodrilo: Reptiles // <- Herencia
 {
-    public string Garras { get; set; }
-
-    public void VolarAlto()
+    public string Piel { get; set; }
+    public Cocodrilo() // <- Polimorfismo
     {
-        Console.WriteLine("20 metros sobre el nivel del mar");
+        Piel = "Esta cubierta por escamas compuestas de queratina";
+    }
+
+    public void Velocidad()  // <- Abstraccion
+    {
+        Console.WriteLine("Velocidad: En tierra su velocidad máxima es de entre 2 y 4 km/h");
+    }
+        public void Temperatura()
+    {
+        DescribirTemperatura();
+    }
+
+    private void DescribirTemperatura() // <- Encapsulamiento
+    {
+        Console.WriteLine("Temperatura: su temperatura corporal no es controlada por mecanismos internos del organismo sino por su conducta");
     }
 }

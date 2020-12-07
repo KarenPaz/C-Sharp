@@ -92,6 +92,33 @@ namespace _12_ejercicio_clase_animales
             l.Hablar();
             l.Alimentacion();
             Console.WriteLine();
+
+            Console.WriteLine("***Reptiles***");
+            Cocodrilo c = new Cocodrilo();
+            Console.WriteLine("Cocodrilo");
+            c.Nombre = "Bendi";
+            c.Patas = true;
+            Console.WriteLine("Nombre: "+ c.Nombre);
+            Console.WriteLine("Patas: " + c.Patas);
+            Console.WriteLine("Piel: "+ c.Piel);
+            c.Comer();
+            c.Arrastrar();
+            c.Velocidad();
+            c.Temperatura();
+            Console.WriteLine();
+
+            Culebra s = new Culebra();
+            Console.WriteLine("Serpiente: cascabel");
+            s.Nombre = "Letal";
+            s.Patas = false;
+            Console.WriteLine("Nombre: "+ s.Nombre);
+            Console.WriteLine("Patas: " + s.Patas);
+            Console.WriteLine("Venenosa: "+ s.Venenosa);
+            s.Comer();
+            s.Arrastrar();
+            s.Sonido();
+            s.Tamano();
+            Console.WriteLine();
         }
     }
 }

@@ -2,10 +2,10 @@ using System;
 
 public abstract class Reptiles: Animal
 {
-    public int PielResistente { get; set; }
+    public bool Patas{ get; set; }
 
     public void Arrastrar()
     {
-        Console.WriteLine("Reptan o arrastran");
+        Console.WriteLine("Método: Reptan o arrastran");
     }
 }

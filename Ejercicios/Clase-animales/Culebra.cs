@@ -1,10 +1,29 @@
 using System;
-public class Culebra: Reptiles
+public class Culebra: Reptiles // <- Herencia
 {
-    public string Garras { get; set; }
+public bool Venenosa { get; set; }
 
-    public void VolarAlto()
+    public Culebra() // <- Polimorfismo
     {
-        Console.WriteLine("20 metros sobre el nivel del mar");
+        Venenosa = true;
+    }
+
+    public Culebra(bool venenosa) // <- Polimorfismo
+    {
+        Venenosa = venenosa;
+    }
+    public void Sonido () // <- Abstraccion
+    {
+        Console.WriteLine("Sonido: siseo, silbido");
+    }
+
+    public void Tamano()
+    {
+        DescribirTamano();
+    }
+
+    private void DescribirTamano() // <- Encapsulamiento
+    {
+        Console.WriteLine("Tamano: puede llegar a medir hasta los 1,52 metros de largo");
     }
 }
