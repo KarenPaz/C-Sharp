@@ -265,10 +265,5 @@ public class DatosPrueba
           break;
        }
        }
-    }
-   // public void ListarCalificaciones ()
-   // {   
-   // }
-   
-
+    } 
 }  
