@@ -5,11 +5,11 @@ public class EstudiantesMat1
     public string NombreMat1 { get; set; }
     public string CorreoMat1 { get; set; }
 
-    public EstudiantesMat1(int codigo1, string nombre1, string correo1)
+    public EstudiantesMat1(int codigo, string nombre, string correo)
     {
-        CodigoMat1 = codigo1;
-        NombreMat1 = nombre1;
-        CorreoMat1 = correo1;
+        CodigoMat1 = codigo;
+        NombreMat1 = nombre;
+        CorreoMat1 = correo;
         
     }
 

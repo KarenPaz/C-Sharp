@@ -20,6 +20,8 @@ namespace Sistema_Notas
                 Console.WriteLine("3 - Ingreso de Notas");
                // Console.WriteLine("4 - Listado de calificaciones");
                 Console.WriteLine("0 - Salir");
+                Console.WriteLine("");
+                Console.Write ("Ingrese numero de opción: ");
                 opcion = Console.ReadLine();
 
                 switch (opcion)
@@ -30,6 +32,7 @@ namespace Sistema_Notas
                     case "2":
                        string opcion1 = "";
                        datos.ListarEstudiantes();
+                       Console.Write("Ingrese codigo de materia: ");
                        opcion1 = Console.ReadLine();
                        switch (opcion1)
                        {
@@ -52,6 +55,7 @@ namespace Sistema_Notas
                     case "3":
                         string opcion2 = "";
                         datos.ListarMaterias();
+                        Console.Write("Ingre codigo de materia:");
                         opcion2 = Console.ReadLine();
                         switch (opcion2)
                        {
