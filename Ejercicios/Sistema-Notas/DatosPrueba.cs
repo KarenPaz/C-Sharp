@@ -40,36 +40,36 @@ public class DatosPrueba
     {
         EstudiantesMat1 e11 = new EstudiantesMat1 (5, "Jorge Villanueva", "jvillanueva@unah.hn");
         ListaEstudiantesMat1.Add(e11);
-        EstudiantesMat1 e12 = new EstudiantesMat1 (6, "Karen Paz", "kpaz@unah.hn");
+        EstudiantesMat1 e12 = new EstudiantesMat1 (6, "Karen Paz       ", "kpaz@unah.hn");
         ListaEstudiantesMat1.Add(e12);
-        EstudiantesMat1 e13 = new EstudiantesMat1 (7, "Yesica Amaya", "yamaya@unah.hn");
+        EstudiantesMat1 e13 = new EstudiantesMat1 (7, "Yesica Amaya    ", "yamaya@unah.hn");
         ListaEstudiantesMat1.Add(e13);
     }
     private void cargarEstudiantesMat2()
     {
-        EstudiantesMat2 e21 = new EstudiantesMat2 (8, "Andrea Bardales", "abardales@unah.hn");
+        EstudiantesMat2 e21 = new EstudiantesMat2 (8, "Andrea Bardales ", "abardales@unah.hn");
         ListaEstudiantesMat2.Add(e21);
-        EstudiantesMat2 e22 = new EstudiantesMat2 (9, "Naya Morgado", "Nmorgado@unah.hn");
+        EstudiantesMat2 e22 = new EstudiantesMat2 (9, "Naya Morgado    ", "Nmorgado@unah.hn");
         ListaEstudiantesMat2.Add(e22);
-        EstudiantesMat2 e23 = new EstudiantesMat2 (10, "Edgardo Torres", "etorres@unah.hn");
+        EstudiantesMat2 e23 = new EstudiantesMat2 (10, "Edgardo Torres ", "etorres@unah.hn");
         ListaEstudiantesMat2.Add(e23);
     }
     private void cargarEstudiantesMat3()
     {
-        EstudiantesMat3 e31 = new EstudiantesMat3 (11, "Carlos Garcia", "Cgarcia@unah.hn");
+        EstudiantesMat3 e31 = new EstudiantesMat3 (11, "Carlos Garcia  ", "Cgarcia@unah.hn");
         ListaEstudiantesMat3.Add(e31);
-        EstudiantesMat3 e32 = new EstudiantesMat3 (12, "Karla Jauregui", "kjauregui@unah.hn");
+        EstudiantesMat3 e32 = new EstudiantesMat3 (12, "Karla Jauregui ", "kjauregui@unah.hn");
         ListaEstudiantesMat3.Add(e32);
-        EstudiantesMat3 e33 = new EstudiantesMat3 (13, "Maria Martinez", "Mmartinez@unah.hn");
+        EstudiantesMat3 e33 = new EstudiantesMat3 (13, "Maria Martinez ", "Mmartinez@unah.hn");
         ListaEstudiantesMat3.Add(e33);
     }
     private void cargarEstudiantesMat4()
     {
-        EstudiantesMat4 e41 = new EstudiantesMat4 (10, "Keana Bardales", "abardales@unah.hn");
+        EstudiantesMat4 e41 = new EstudiantesMat4 (10, "Keana Bardales ", "abardales@unah.hn");
         ListaEstudiantesMat4.Add(e41);
-        EstudiantesMat4 e42 = new EstudiantesMat4 (11, "Camila Morgado", "cmorgado@unah.hn");
+        EstudiantesMat4 e42 = new EstudiantesMat4 (11, "Camila Morgado ", "cmorgado@unah.hn");
         ListaEstudiantesMat4.Add(e42);
-        EstudiantesMat4 e43 = new EstudiantesMat4 (12, "Edgardo Torres", "etorres@unah.hn");
+        EstudiantesMat4 e43 = new EstudiantesMat4 (12, "Edgardo Torres ", "etorres@unah.hn");
         ListaEstudiantesMat4.Add(e43);
     }
     public void ListarMaterias()
@@ -102,9 +102,11 @@ public class DatosPrueba
         Console.Clear();
         Console.WriteLine("Lista de Estudiantes clase de Lenguaje de programación 1");
         Console.WriteLine("========================================================");
+        Console.WriteLine("");
+        Console.WriteLine(" Cod. |     Nombre       |       correo    ");
         foreach (var estudiantesmat1 in ListaEstudiantesMat1)
         {
-            Console.WriteLine(estudiantesmat1.CodigoMat1 + " | " + estudiantesmat1.NombreMat1 + " | " + estudiantesmat1.CorreoMat1);
+            Console.WriteLine(estudiantesmat1.CodigoMat1 + "     | " + estudiantesmat1.NombreMat1 + " | " + estudiantesmat1.CorreoMat1);
         }
         Console.ReadLine();
     }
@@ -113,9 +115,11 @@ public class DatosPrueba
         Console.Clear();
         Console.WriteLine("Lista de Estudiantes clase de Lenguaje de programación 2");
         Console.WriteLine("========================================================");
+        Console.WriteLine("");
+        Console.WriteLine(" Cod. |    Nombre        |       correo    ");
         foreach (var estudiantesmat2 in ListaEstudiantesMat2)
         {
-            Console.WriteLine(estudiantesmat2.CodigoMat2 + " | " + estudiantesmat2.NombreMat2 +  " | " + estudiantesmat2.CorreoMat2);
+            Console.WriteLine(estudiantesmat2.CodigoMat2 + "     | " + estudiantesmat2.NombreMat2 +  " | " + estudiantesmat2.CorreoMat2);
         }
         Console.ReadLine();
     }
@@ -124,9 +128,12 @@ public class DatosPrueba
         Console.Clear();
         Console.WriteLine("Lista de Estudiantes clase de Sistemas operativos 1");
         Console.WriteLine("===================================================");
+        Console.WriteLine("");
+        Console.WriteLine(" Cod.  |     Nombre      |       correo    ");
+
         foreach (var estudiantesmat3 in ListaEstudiantesMat3)
         {
-            Console.WriteLine(estudiantesmat3.CodigoMat3 + " | " + estudiantesmat3.NombreMat3 +  " | " + estudiantesmat3.CorreoMat3);
+            Console.WriteLine(estudiantesmat3.CodigoMat3 + "     | " + estudiantesmat3.NombreMat3 +  " | " + estudiantesmat3.CorreoMat3);
         }
         Console.ReadLine();
     }
@@ -135,9 +142,11 @@ public class DatosPrueba
         Console.Clear();
         Console.WriteLine("Lista de Estudiantes clase de Taller 1");
         Console.WriteLine("======================================");
+        Console.WriteLine("");
+        Console.WriteLine(" Cod.  |      Nombre     |       correo    ");
         foreach (var estudiantesmat4 in ListaEstudiantesMat4)
         {
-            Console.WriteLine(estudiantesmat4.CodigoMat4 + " | " + estudiantesmat4.NombreMat4 +  " | " + estudiantesmat4.CorreoMat4);
+            Console.WriteLine(estudiantesmat4.CodigoMat4 + "     | " + estudiantesmat4.NombreMat4 +  " | " + estudiantesmat4.CorreoMat4);
         }
         Console.ReadLine();
     }

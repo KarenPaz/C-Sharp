@@ -18,7 +18,6 @@ namespace Sistema_Notas
                 Console.WriteLine("1 - Lista de Materias");
                 Console.WriteLine("2 - Lista de Estudiantes por materia");
                 Console.WriteLine("3 - Ingreso de Notas");
-               // Console.WriteLine("4 - Listado de calificaciones");
                 Console.WriteLine("0 - Salir");
                 Console.WriteLine("");
                 Console.Write ("Ingrese numero de opción: ");
@@ -75,11 +74,6 @@ namespace Sistema_Notas
                               break;
                        }    
                         break;
-                 //   case "4":
-                   //     datos.ListarCalificaciones();
-                     //   break;                                               
-                   //default:
-                     //  break;
                 }
                 if (opcion == "0") {
                     break;
